@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+--cyan: hsl(179, 62%, 43%);
+--yellow: hsl(71, 73%, 54%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    font-family: Karla;
+    padding: 190px;
+    
+}
+
+.mother{
+    max-width: 800px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(59, 59, 59, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.community{
+    padding: 60px;
+    width: 100%;
+}
+
+.community p:first-child{
+    color: var(--cyan) ;
+    font-size: 26px;
+    font-weight:700;
+    margin-bottom: 20px;
+}
+
+.community p:nth-child(2){
+    color: var(--yellow);
+    font-size: 18px;
+    font-weight:700;
+    margin-bottom: 15px;
+}
+.community p:nth-child(3){
+    color:hsl(218, 22%, 67%) ;
+    margin-bottom:10px ;
+}
+.community p:last-child{
+    color:hsl(218, 22%, 67%) ;
+    margin-bottom:10px ;
+} 
+
+.container{       
+    display: flex;
+    color: white;  
+}
+.first{
+    width: 50%;
+    background-color: var(--cyan);
+    padding: 50px;
+    border-radius: 0 0 0 12px;
+}
+.first p:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#dollar{
+    font-size:28px;
+}
+#month{
+    color:hsl(204, 43%, 93%);
+}
+
+.first p:nth-child(2){
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.link{
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--yellow);
+    margin-top: 30px;
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+ 
+}
+.second{
+    width: 50%;
+    background-color:rgb(77, 206, 211);
+    padding: 50px;
+    border-radius: 0 0 12px 0;
+}
+.second p:first-child{
+    font-size:20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+ .second p{
+    color: hsl(204, 43%, 93%);
+ }
+
+ @media screen and (max-width:800px) {
+     .container{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .first {
+        width: 100%;
+        border-radius: 0;
+     }
+
+     .second{
+        width: 100%;
+        border-radius: 0;
+        border-radius: 0 0 12px 12px;
+     }
+     .second p{
+        margin-bottom: 5px;
+     }
+     .link{
+        width: 500px;
+     }
+
+}
