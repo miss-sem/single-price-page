@@ -16,8 +16,7 @@ body{
     height: 100%;
     margin: 0;
     font-family: Karla;
-    padding: 190px;
-    
+    padding: 180px 20px;
 }
 
 .mother{
@@ -64,7 +63,7 @@ body{
 .first{
     width: 50%;
     background-color: var(--cyan);
-    padding: 50px;
+    padding: 60px;
     border-radius: 0 0 0 12px;
 }
 .first p:first-child{
@@ -86,7 +85,7 @@ body{
     gap: 12px;
 }
 .link{
-    width: 300px;
+    width: 100%;
     padding: 15px;
     border-radius: 8px;
     background-color: var(--yellow);
@@ -101,7 +100,7 @@ body{
 .second{
     width: 50%;
     background-color:rgb(77, 206, 211);
-    padding: 50px;
+    padding: 60px;
     border-radius: 0 0 12px 0;
 }
 .second p:first-child{
@@ -113,12 +112,20 @@ body{
     color: hsl(204, 43%, 93%);
  }
 
- @media screen and (max-width:800px) {
+ @media  screen and (max-width: 700px) {
+    body{
+            padding: 50px 20px;
+        }
+
      .container{
-        display: flex;
         flex-direction: column;
      }
-
+      .community , .first , .second {
+        padding:30px;
+      }
+     .community p{
+        line-height: 20px;
+     }
      .first {
         width: 100%;
         border-radius: 0;
@@ -126,14 +133,10 @@ body{
 
      .second{
         width: 100%;
-        border-radius: 0;
         border-radius: 0 0 12px 12px;
      }
      .second p{
         margin-bottom: 5px;
-     }
-     .link{
-        width: 500px;
      }
 
 }
